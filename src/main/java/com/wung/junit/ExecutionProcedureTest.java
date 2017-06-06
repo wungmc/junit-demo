@@ -44,4 +44,20 @@ public class ExecutionProcedureTest {
         System.out.println("test 2");
     }
 
+    /**
+     * 方法运行超过 1000 ms，则失败
+     * (死循环，该方法肯定超过 1000ms)
+     */
+    @Test(timeout = 1000)
+    public void test3() {
+        System.out.println("test 3");
+        while (true);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void test4() {
+        System.out.println("test 4");
+        System.out.println(3/0);
+    }
+
 }

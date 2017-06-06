@@ -24,13 +24,20 @@ public class ExecutionProcedureTestRunner {
  * output result:
  *
     before class
-     before
-     test 1
-     after
-     before
-     test 2
-     after
-     after class
-     true
+    before
+    test 1
+    after
+    before
+    test 2
+    after
+    before
+    test 3
+    after
+    before
+    test 4
+    after
+    after class
+    test3(com.wung.junit.ExecutionProcedureTest): test timed out after 1000 milliseconds
+    false
  *
  */
