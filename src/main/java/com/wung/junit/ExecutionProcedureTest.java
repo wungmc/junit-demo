@@ -60,4 +60,12 @@ public class ExecutionProcedureTest {
         System.out.println(3/0);
     }
 
+    /**
+     * 单元测试时，该方法会被忽略
+     */
+    @Ignore
+    public void test5() {
+        System.out.println("test 5");
+    }
+
 }
